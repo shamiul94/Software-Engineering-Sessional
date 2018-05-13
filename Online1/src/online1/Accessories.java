@@ -10,6 +10,8 @@ package online1;
  * @author Heisenberg
  */
 public interface Accessories {
+
     public String showAccessories();
+
     public double Price();
 }

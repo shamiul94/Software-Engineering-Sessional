@@ -10,6 +10,8 @@ package online1;
  * @author Heisenberg
  */
 public interface Car {
-    public String showSelectedCar(); 
+
+    public String showSelectedCar();
+
     public double Price();
 }

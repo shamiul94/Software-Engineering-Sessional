@@ -9,14 +9,16 @@ package online1;
  *
  * @author Heisenberg
  */
-public class Tools implements Accessories{
+public class Tools implements Accessories {
 
     @Override
     public String showAccessories() {
-return "Tool" ;     }
+        return "Tool";
+    }
 
     @Override
     public double Price() {
-return 100;     }
-    
+        return 100;
+    }
+
 }

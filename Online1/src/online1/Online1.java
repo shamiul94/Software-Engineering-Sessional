@@ -17,9 +17,10 @@ public class Online1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int t = 0 ; 
+        int t = 0;
+        
         while (t < 10) {
-            t++; 
+            t++;
             factory fac;
 
             int seat;

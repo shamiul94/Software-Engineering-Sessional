@@ -13,55 +13,47 @@ import java.util.List;
  * @author Heisenberg
  */
 public class Product {
-    private Car vehicle ; 
+
+    private Car vehicle;
     private final List<Accessories> acc = new ArrayList<>();
-    
-    void addPrivateCar()
-    {
+
+    void addPrivateCar() {
         vehicle = new PrivateCar();
     }
-    
-    void addMicro()
-    {
-        vehicle = new Micro(); 
+
+    void addMicro() {
+        vehicle = new Micro();
     }
-    
-    String getVehicleName()
-    {
-        return vehicle.showSelectedCar(); 
+
+    String getVehicleName() {
+        return vehicle.showSelectedCar();
     }
-    
-    void showAccessories()
-    {
-        for (Accessories accs: acc)
-        {
-            System.out.println(accs.showAccessories()+" was added. cost : " + accs.Price());
+
+    void showAccessories() {
+        for (Accessories accs : acc) {
+            System.out.println(accs.showAccessories() + " was added. cost : " + accs.Price());
         }
     }
-    
-    void addSeat()
-    {
-        acc.add(new Seat()); 
+
+    void addSeat() {
+        acc.add(new Seat());
     }
-    void addAC()
-    {
-        acc.add(new AC()); 
+
+    void addAC() {
+        acc.add(new AC());
     }
-    
-    void addTool()
-    {
-        acc.add(new Tools()); 
+
+    void addTool() {
+        acc.add(new Tools());
     }
-    
-    double getCost()
-    {
-        double price = 0 ; 
-        price += vehicle.Price(); 
-        
-        for (Accessories accs: acc)
-        {
-            price += accs.Price(); 
+
+    double getCost() {
+        double price = 0;
+        price += vehicle.Price();
+
+        for (Accessories accs : acc) {
+            price += accs.Price();
         }
-        return price; 
+        return price;
     }
 }
